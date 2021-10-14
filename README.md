@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Git Large File Storage
 
 [![CI status][ci_badge]][ci_url]
@@ -246,3 +247,6 @@ In alphabetical order:
 [rubyist-user]: https://github.com/rubyist
 [technoweenie-user]: https://github.com/technoweenie
 [ttaylorr-user]: https://github.com/ttaylorr
+=======
+# Waste-Segregator
+>>>>>>> 038a5e5b8a125b0d58dc1b7e25df6609c6bc0396
