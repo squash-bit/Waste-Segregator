@@ -1,9 +1,8 @@
 import os
 import sys
-
 import streamlit as st
-from explore_page import *
-from predict_page import predict_garbage
+from get_image import *
+from predict import predict_garbage
 
 # design frontend using streamlit
 st.sidebar.title("Waste Segregator")
@@ -40,9 +39,9 @@ def main():
         st.write("")
 
         # make prediction
-        prediction = predict_garbage(image)
+        prediction = predict_garbage(image_file)
         st.subheader('Prediction')
-        # st.markdown(f'The predicted label is: **{prediction}**')
+        st.markdown(f'The predicted label is: **{prediction}**')
 
 if __name__ == '__main__':
     main()
