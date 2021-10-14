@@ -1,0 +1,8 @@
+Wheel-Version: 1.0
+Generator: bdist_wheel (0.36.2)
+Root-Is-Purelib: false
+Tag: cp37-cp37m-manylinux_2_5_i686
+Tag: cp37-cp37m-manylinux1_i686
+Tag: cp37-cp37m-manylinux_2_12_i686
+Tag: cp37-cp37m-manylinux2010_i686
+
