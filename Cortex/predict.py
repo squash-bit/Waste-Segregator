@@ -11,7 +11,7 @@ import pickle
 import numpy as np
 import matplotlib.pyplot as plt
 
-data_dir = '../content/garbage classification/Garbage classification'
+data_dir = '../Garbage Data/garbage classification/Garbage classification'
 
 transformations = transforms.Compose([transforms.Resize((256, 256)), transforms.ToTensor()])
 dataset = ImageFolder(data_dir, transform = transformations)
@@ -74,7 +74,7 @@ device = get_default_device()
 
 # Load model
 load_model = to_device(ResNet(), device)
-load_model.load_state_dict(torch.load('./final_model.pth', map_location=torch.device('cpu')))
+load_model.load_state_dict(torch.load('../final_model.pth', map_location=torch.device('cpu')))
 load_model.eval()
 
 def predict_image(img, model):
@@ -89,8 +89,11 @@ def predict_image(img, model):
 
 def predict_garbage(image_name):
     # link image path for prediction
-    PATH_TO_TEST_IMAGES = './test_images/'
-    image = Image.open(Path(PATH_TO_TEST_IMAGES + image_name))
+    if image_name[1] == 1:
+        PATH_TO_TEST_IMAGES = './test_images/'
+        image = Image.open(Path(PATH_TO_TEST_IMAGES + image_name[0]))
+    else:
+        image = Image.open(image_name[0])
 
     example_image = transformations(image)
     plt.imshow(example_image.permute(1, 2, 0))
