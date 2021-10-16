@@ -2,7 +2,7 @@
 
 ![Python 3.7](https://img.shields.io/badge/Made_With-Python_3.7-green?style=for-the-badge&logo=appveyor)
 ![GitHub repo size](https://img.shields.io/github/repo-size/squash-bit/Waste-Segregator)
-![GitHub stars](https://img.shields.io/github/stars/squash-bit/Automate-Whatsapp-News?style=social)
+![GitHub stars](https://img.shields.io/github/stars/squash-bit/Waste-Segregator?style=social)
 
 ## Table of Content
   * [Overview](#overview)
